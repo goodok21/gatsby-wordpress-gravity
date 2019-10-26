@@ -27,11 +27,11 @@ export const pageQuery = graphql`
     wordpressPost(id: { eq: $id }) {
       title
       content
-    site {
-      siteMetadata {
-        title
-        subtitle
-      }
-    }
+    # site {
+    #   siteMetadata {
+    #     title
+    #   }
+    # }
   }
+}
 `
